@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    },
+    "ado": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@azure-devops/mcp",
+        "YOUR_ORGANIZATION",
+        "-d",
+        "core",
+        "search",
+        "pipelines",
+        "repositories"
+      ],
+      "env": {
+        "ado_mcp_project": "YOUR_PROJECT",
+        "ADO_TOKEN": "${ADO_PAT}"
+      }
+    }
+  }
+}
