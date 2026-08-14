@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/tresinternet",
+      "type": "http",
+	   "headers": {
+        "X-MCP-Toolsets": "repos,pipelines"
+      }
+    }
+  },
+  "inputs": []
+}
